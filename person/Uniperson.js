@@ -3,8 +3,8 @@ const Person= require('./Person')
 const _department =Symbol('department')
 const _account =Symbol('account')
 
-class Uniperson extends Person{
-    constructor(id,name){
+class UnyPerson extends Person{
+    constructor(id,name, department, account){
         super(id,name)
       this[_department] =null;
       this[_account] =null;
@@ -33,4 +33,4 @@ class Uniperson extends Person{
     }
 }
 
-export default Uniperson;
+export default UnyPerson;

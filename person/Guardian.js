@@ -4,7 +4,7 @@ const _profession = Symbol('profession')
 const _income = Symbol('income')
 
 class Guardian extends Person{
-    constructor(id, name){
+    constructor(id, name, profession, income){
        super(id,name);
     this[_income] =null
     this[_profession] = null
@@ -33,4 +33,4 @@ class Guardian extends Person{
     }
 }
 
-export default Guardian;
+module.exports = Guardian
