@@ -34,7 +34,7 @@ class Person{
     }
     
     toString(){
-        return `${this[_id]} - ${this[_name]}`
+        return `${super.toString()},${this[_id]}, ${this[_name]}`
     }
 
 }

@@ -27,10 +27,13 @@ class UnyPerson extends Person{
     }
 
     toString(){
-      super.toString()
+
+        return `${super.toString()} Deartment= ${this[_department]},Account= ${this[_account]}`
+      
+    /*  
       console.log('Deartment= ${this[_department]}')
-      console.log('Account= ${this[_account]}')
+      console.log('Account= ${this[_account]}') */
     }
 }
 
-export default UnyPerson;
+module.exports= UnyPerson;

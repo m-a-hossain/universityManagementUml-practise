@@ -6,8 +6,8 @@ const _income = Symbol('income')
 class Guardian extends Person{
     constructor(id, name, profession, income){
        super(id,name);
-    this[_income] =null
-    this[_profession] = null
+        this[_income] =null
+        this[_profession] = null
     }
      
     get income(){
@@ -27,10 +27,9 @@ class Guardian extends Person{
     }
 
     toString(){
-        super.toString();
-        console.log('Accounts= ${this[_account]}')
-        console.log('Professin= ${this[_profession]}')
+        return `${super.toString()},Accounts= ${this[_account]},Professin= ${this[_profession]}`;
     }
+        
 }
 
 module.exports = Guardian
